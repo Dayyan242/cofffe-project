@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>STARCOFFEE - Cold Coffee</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">STARCOFFEE</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link">HOME</a></li>
+          <li><a href="#popular" class="nav__link">POPULAR</a></li>
+          <li><a href="#about" class="nav__link">ABOUT US</a></li>
+          <li><a href="#products" class="nav__link">PRODUCTS</a></li>
+          <li><a href="#contact" class="nav__link">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home Sectio
+   n -->
+  <main class="main">
+    <section class="home-section" id="home">
+      <div class="home__container container grid">
+        <h1 class="home__title">COLD COFFEE</h1>
+
+        <div class="home__images">
+          <div class="home__shape"></div>
+          <img src="assets/home-splash.png" alt="Splash" class="home__splash">
+          <img src="assets/bean-img.png" alt="Bean" class="home__bean-1">
+          <img src="assets/bean-img.png" alt="Bean" class="home__bean-2">
+          <img src="assets/home-coffee.png" alt="Cold Coffee" class="home__coffee">
+          <img src="assets/ice-img.png" alt="Ice" class="home__ice-1">
+          <img src="assets/ice-img.png" alt="Ice" class="home__ice-2">
+          <img src="assets/leaf-img.png" alt="Leaf" class="home__leaf">
+        </div>
+
+        <img src="assets/home-sticker.svg" alt="Sticker" class="home__sticker">
+
+        <div class="home__data">
+          <p class="home__description">
+            Find delicious hot and cold coffees with the best varieties, calm the pleasure and enjoy a good coffee,
+            order now.
+          </p>
+          <a href="#about" class="button">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="coffee-section" id="popular">
+      <div class="container">
+        <h1 class="text-center mb-5" style="text-transform: uppercase;">Popular <br> Creations</h1>
+        <div class="row justify-content-center">
+
+          <!-- Card 1 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="coffee-card position-relative">
+              <div class="home__shape-1"></div>
+              <img src="assets/popular-coffee-3.png" alt="Mocha Coffee" class="coffee-image">
+              <h2 class="coffee-name">Mocha Coffee</h2>
+              <p class="coffee-description">Indulge in the simplicity of our delicious cold brew coffee.</p>
+              <button class="coffee-button" onclick="placeOrder('Mocha Coffee')">Order now: $9.50</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="coffee-card position-relative">
+              <div class="home__shape-1"></div>
+              <img src="assets/popular-coffee-2.png" alt="Vanilla Latte" class="coffee-image">
+              <h2 class="coffee-name">Vanilla Latte</h2>
+              <p class="coffee-description">Indulge in the simplicity of our delicious cold brew coffee.</p>
+              <button class="coffee-button" onclick="placeOrder('Vanilla Latte')">Order now: $9.50</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="coffee-card position-relative">
+              <div class="home__shape-1"></div>
+              <img src="assets/popular-coffee-1.png" alt="Classic Coffee" class="coffee-image">
+              <h2 class="coffee-name">Classic Coffee</h2>
+              <p class="coffee-description">Indulge in the simplicity of our delicious cold brew coffee.</p>
+              <button class="coffee-button" onclick="placeOrder('Classic Coffee')">Order now: $9.50</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Column: Text -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="about-title">LEARN MORE<br>ABOUT US</h2>
+            <p class="about-description">
+              Welcome to StarCoffee, where coffee is pure passion. From bean to cup, we are dedicated to delivering
+              excellence in every sip. Join us on a journey of flavor and quality, crafted with love to create the
+              ultimate coffee experience.
+            </p>
+            <button class="about-btn">The Best Coffees</button>
+          </div>
+
+          <!-- Right Column: Image -->
+          <div class="col-lg-6 text-center">
+            <img src="assets/about-coffee.png" alt="Coffee Bag" class="about-image">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="coffee-popular-wrapper" id="products">
+      <div class="container">
+        <h2 class="coffee-popular-heading">THE MOST REQUESTED</h2>
+        <div class="row g-4">
+
+          <!-- Coffee 1 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="coffee-card-custom">
+              <img src="assets/products-coffee-1.png" alt="Iced Mocha" class="coffee-card-img">
+              <div class="coffee-card-title">ICED COFFEE MOCHA</div>
+              <div class="coffee-card-price">$15.90</div>
+            </div>
+          </div>
+
+          <!-- Coffee 2 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="coffee-card-custom">
+              <img src="assets/products-coffee-2.png" alt="Coffee Cream" class="coffee-card-img">
+              <div class="coffee-card-title">COFFEE WITH CREAM</div>
+              <div class="coffee-card-price">$11.90</div>
+            </div>
+          </div>
+
+          <!-- Coffee 3 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="coffee-card-custom">
+              <img src="assets/products-coffee-3.png" alt="Cappuccino" class="coffee-card-img">
+              <div class="coffee-card-title">CAPPUCCINO COFFEE</div>
+              <div class="coffee-card-price">$9.90</div>
+            </div>
+          </div>
+
+          <!-- Coffee 4 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="coffee-card-custom">
+              <img src="assets/products-coffee-4.png" alt="Milk Coffee" class="coffee-card-img">
+              <div class="coffee-card-title">COFFEE WITH MILK</div>
+              <div class="coffee-card-price">$5.90</div>
+            </div>
+          </div>
+
+          <!-- Coffee 5 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="coffee-card-custom">
+              <img src="assets/products-coffee-5.png" alt="Classic Iced" class="coffee-card-img">
+              <div class="coffee-card-title">CLASSIC ICED COFFEE</div>
+              <div class="coffee-card-price">$9.90</div>
+            </div>
+          </div>
+
+          <!-- Coffee 6 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="coffee-card-custom">
+              <img src="assets/products-coffee-6.png" alt="Frappe" class="coffee-card-img">
+              <div class="coffee-card-title">ICED COFFEE FRAPPE</div>
+              <div class="coffee-card-price">$13.90</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="contact-block-wrapper" id="contact">
+      <div class="container">
+        <h2 class="contact-heading-custom">CONTACT <span style="color: #00c291;">US</span></h2>
+
+        <div class="row align-items-center text-center">
+          <!-- Left Info -->
+          <div class="col-md-3 contact-info-block">
+            <div class="contact-info-title">Write Us</div>
+            <div class="contact-info-detail">📧 contact@email.com</div>
+            <div class="contact-info-title mt-4">Location</div>
+            <div class="contact-info-detail">Lima, Sun City, Peru <br> 📍 Moon Plaza</div>
+          </div>
+
+          <!-- Center Image -->
+          <div class="col-md-6">
+            <div class="contact-image-holder">
+              <img src="assets/contact-delivery.png" alt="Contact Girl">
+            </div>
+          </div>
+
+          <!-- Right Info -->
+          <div class="col-md-3 contact-info-block">
+            <div class="contact-info-title">Delivery</div>
+            <div class="contact-info-detail">📞 +00 987 654 321</div>
+            <div class="contact-info-title mt-4">Attention</div>
+            <div class="contact-info-detail">Mon - Sat <br> 8AM - 10PM</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="enjoying">
+      <div class="container text-center">
+        <h2 class="title">BENEFITS OF ENJOYING</h2>
+
+        <div class="benefit-box">
+          <div class="benefit-text">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>1. Beat the heat and stay energized with our refreshing iced coffees.</span>
+          </div>
+          <div class="emoji">🥤</div>
+        </div>
+
+        <div class="benefit-box">
+          <div class="benefit-text">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>2. Our iced coffees are more than a beverage; they're a social experience.</span>
+          </div>
+          <div class="emoji">☕</div>
+        </div>
+
+        <div class="benefit-box">
+          <div class="benefit-text">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>3. Our iced coffees are conveniently packaged for on-the-go enjoyment.</span>
+          </div>
+          <div class="emoji">💭</div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+        <!-- Left: Company Name -->
+        <div class="left" id="name">
+          <h5 class="mb-0">FROSTBREW</h5>
+        </div>
+
+        <!-- Center: Navigation Links -->
+        <div class="center d-flex">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Popular</a>
+          <a href="#" class="nav-link">About Us</a>
+          <a href="#" class="nav-link">Products</a>
+          <a href="#" class="nav-link">Contact</a>
+        </div>
+
+        <!-- Right: Social Icons -->
+        <div class="right social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- Scripts -->
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
